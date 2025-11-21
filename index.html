@@ -1,11 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Patos Divertidos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 </head>
 <body>
-    Hello World!
+
+    <audio id="cuacAudio" src="quack.mp3"></audio>
+
+    <div class="burbujas"></div>
+
+    <header>
+        <h1 class="titulo-animado">
+            <span id="t1">Patos!</span>
+            <span id="t2">CUACK!</span>
+            <span id="t3">CUACK!!</span>
+        </h1>
+
+        <nav>
+            <ul>
+                <li><a href="#tipos">Tipos</a></li>
+                <li><a href="#datos">Curiosidades</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#juego">MiniJuego</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="intro">
+            <h2>¿Por qué los patos son increíbles?</h2>
+            <p>Los patos son adorables y divertidos</p>
+        </section>
+
+        <section id="tipos">
+            <h2>Tipos de Patos</h2>
+            <div class="card-container">
+                <article class="card">
+                    <img src="https://aroucageopark.pt/wp-content/uploads/2024/03/Pato-real-Anas-platyrhynchos.jpg" alt="Pato Real" class="card-img">
+                    <h3>Pato Real</h3>
+                    <ul>
+                        <li>Cabeza verde brillante, estilo elegante.</li>
+                        <li>Vive en lagos, ríos y pantanos.</li>
+                        <li>Los machos tienen un característico pico anaranjado.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/102BC/production/_96463266_gettyimages-518337354.jpg.webp" alt="Pato Mandarín" class="card-img">
+                    <h3>Pato Mandarín</h3>
+                    <ul>
+                        <li>Es uno de los patos más coloridos.</li>
+                        <li>Habita principalmente en China y Japón.</li>
+                        <li>Su plumaje es conocido por su intensidad y variedad de colores.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <img src="https://media.istockphoto.com/id/1291406020/es/foto/pato-arlequ%C3%ADn.jpg?s=612x612&w=0&k=20&c=EfGc5zGJWGkozuMaEp7T6pWkJnPx8Dclh5mR6yRLkZg=" alt="Pato Arlequín" class="card-img">
+                    <h3>Pato Arlequín</h3>
+                    <ul>
+                        <li>Es un pato pequeño con plumaje de colores vivos.</li>
+                        <li>Es nativo de las montañas de América del Norte.</li>
+                        <li>Su nombre proviene de su apariencia colorida similar a un traje de arlequín.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+
+
+        <section id="datos">
+            <h2>Datos Curiosos</h2>
+            <button onclick="mostrarDato()">¡Dame un dato pato!</button>
+            <p id="dato"></p>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería de Patos</h2>
+            <div class="galeria">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjSo1bghczUJ_MR4H2D0LiRrQ3Pq9AyFfow&s" alt="Pato en acción">
+                <img src="https://i.pinimg.com/originals/71/54/b0/7154b06eafff649345e145c9b188bbfc.jpg" alt="Pato Mandarín">
+                <img src="https://i.pinimg.com/736x/b7/d0/b4/b7d0b472b0941eef5ddcd93b2cc2c579.jpg" alt="Patito">
+                <img src="https://wallpapers.com/images/featured/imagenes-de-pato-divertido-wuzoov0m65uowzu0.jpg" alt="Pato Divertido">
+                <img src="https://i.pinimg.com/736x/c2/8c/52/c28c52376890106ba358bcb654072bc8.jpg" alt="Patito Tierno">
+            </div>
+        </section>
+
+     
+        <section id="juego">
+            <h2>MiniJuego: ¡Atrapa al pato!</h2>
+            <p>Clickea al pato antes de que escape ⬇⬇⬇</p>
+
+            <div id="juegoArea">
+                <img id="patoJuego" src="https://i.imgur.com/ObpV19M.gif">
+            </div>
+
+            <p id="puntos">Puntos: 0</p>
+        </section>
+
+
+        <section id="adopcion">
+            <h2>¡Adopta un Pato!</h2>
+            <p>Si deseas adoptar un pato y darle un hogar, por favor completa el siguiente formulario.</p>
+
+      
+            <div class="video-container">
+                <h2>¡Mira lo geniales que son!</h2>
+                <iframe src="https://youtu.be/NlcWBPDl5WA?si=rKt6Ks1eUMd8Q_gC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+ 
+            <div class="razones-adopcion">
+                <h2>3 Razones para Adoptar un Pato</h2>
+                <ol>
+                    <li>Son excelentes compañeros y pueden formar fuertes lazos con sus dueños.</li>
+                    <li>Ayudan a controlar plagas en el jardín, como babosas e insectos.</li>
+                    <li>¡Sus graznidos y travesuras diarias te sacarán más de una sonrisa!</li>
+                </ol>
+            </div>
+            
+            <form id="form-adopcion" onsubmit="enviarFormulario(event)">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="motivo">Motivo para adoptar:</label>
+                <textarea id="motivo" name="motivo" rows="4" required></textarea>
+
+                <button type="submit">Enviar Solicitud</button>
+            </form>
+
+            <div id="mensaje-confirmacion" style="display: none;">
+                <h3>¡Gracias por tu solicitud de adopción!</h3>
+                <p>Tu solicitud ha sido enviada correctamente. ¡Te contactaremos pronto!</p>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>By dannitzellz</p>
+    </footer>
+
+    <img id="patoAnimado" src="https://media.tenor.com/3pf3Np1ITUYAAAAj/duckduck.gif">
+
+    <script src="script.js"></script>
 </body>
 </html>
